@@ -4,9 +4,9 @@ import pytest
 from calculator.main import Calculator
 
 def test_calculator_result():
-        """testing calculator result is 0"""
-        calc = Calculator()
-        assert calc.result == 0
+    """testing calculator result is 0"""
+    calc = Calculator()
+    assert calc.result == 0
 
 def test_calculator_add():
     """Testing the Add function of the calculator"""
