@@ -2,6 +2,11 @@
 class Calculator:
     """ This is the Calculator class"""
     History = []
+    result = 0
+
+    def get_result(self):
+        """ Get Result of Calculation"""
+        return self.result
 
     @staticmethod
     def add_number(value_a, value_b):
