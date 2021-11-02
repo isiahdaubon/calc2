@@ -33,5 +33,3 @@ def test_calculator_division_error():
     """ tests dividing by 0 exception """
     with pytest.raises(ZeroDivisionError):
         Calculator.divide_numbers(3, 0)
-
-
