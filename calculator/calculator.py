@@ -18,7 +18,7 @@ class Calculator:
         return Calculator.history[0].getResult()
 
     @staticmethod
-    def get_last_calculation_object():
+    def get_result_of_last_calculation_added_to_history():
         """Retrieves the latest result in history"""
         return Calculator.history[-1]
 
@@ -54,5 +54,5 @@ class Calculator:
     @staticmethod
     def divide_numbers(value_a, value_b):
         """divide the two numbers and return the quotient"""
-        Calculator.add_calculation_to_history(Division.create(value_a, value_b))
+        Calculator.add_calculation_to_history(Divide.create(value_a, value_b))
         return Calculator.get_last_calculation_result()
