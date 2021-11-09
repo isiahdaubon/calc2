@@ -1,7 +1,6 @@
 """Testing the Calculator"""
 import pprint
 import pytest
-
 from calculator.calculator import Calculator
 
 #clear_history_test = None
@@ -10,15 +9,11 @@ from calculator.calculator import Calculator
 @pytest.fixture(name="clear_history_test")
 
 def fixtures_clear_history_test():
-    """Clearing the history array"""
+    """Clear History Feature"""
     return Calculator.clear_history()
 
-
-
-
-
 def test_clear_history(clear_history_test):
-    """Testing the clear function of the calculator"""
+    """Testing clear history"""
     assert Calculator.add_number(1,2) == 3
     assert Calculator.add_number(2, 2) == 4
     assert Calculator.add_number(3, 2) == 5
