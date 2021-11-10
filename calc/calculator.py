@@ -1,58 +1,30 @@
 """ This is the increment function"""
-from calc.addition import Addition
-from calc.subtraction import Subtraction
-from calc.multiplication import Multiplication
+from calc.History.calculations import Calculations
+#methods to calculate
 class Calculator:
     """ This is the Calculator class"""
-
-    history = []
-
     @staticmethod
-    def add_calculation_to_history(calculation):
-        """Add the results to the history"""
-        Calculator.history.append(calculation)
-
+    def get_last_result_value():
+        """This gets the result of the calculation"""
+        Calculations.get_last_calculation_value()
+        return True
     @staticmethod
-    def get_result_of_first_calculation_added_to_history():
-        """Add the first result to history"""
-        return Calculator.history[0].getResult()
-
+    def add_numbers(tuple_values: tuple):
+        """adds list of number"""
+        Calculations.add_addition_calculation(tuple_values)
+        return True
     @staticmethod
-    def get_result_of_last_calculation_added_to_history():
-        """Retrieves the latest result in history"""
-        return Calculator.history[-1]
-
+    def subtract_numbers(tuple_values: tuple):
+        """subtract list of numbers from the result"""
+        Calculations.add_subtraction_calculation(tuple_values)
+        return True
     @staticmethod
-    def clear_history():
-        """Clear the history"""
-        Calculator.history.clear()
-        return Calculator.count_history()
-
+    def multiply_numbers(tuple_values: tuple):
+        """multiply number from result"""
+        Calculations.add_multiplication_calculation(tuple_values)
+        return True
     @staticmethod
-    def count_history():
-        """Count the length of the history"""
-        return len(Calculator.history)
-
-    @staticmethod
-    def add_number(value_a,value_b):
-        """Adds two numbers are returns the sum"""
-        Calculator.add_calculation_to_history(Addition.create(value_a, value_b))
-        return Calculator.get_last_calculation_result()
-
-    @staticmethod
-    def subtract_number(value_a, value_b):
-        """subtracts the two numbers and returns difference"""
-        Calculator.add_calculation_to_history(Subtraction.create(value_a,value_b))
-        return Calculator.get_last_calculation_result()
-
-    @staticmethod
-    def multiply_numbers(value_a, value_b):
-        """multiply the two numbers and return the product"""
-        Calculator.add_calculation_to_history(Multiplication.create(value_a, value_b))
-        return Calculator.get_last_calculation_result()
-
-    @staticmethod
-    def divide_numbers(value_a, value_b):
-        """divide the two numbers and return the quotient"""
-        Calculator.add_calculation_to_history(Divide.create(value_a, value_b))
-        return Calculator.get_last_calculation_result()
+    def divide_numbers(tuple_values: tuple):
+        """divide number from result"""
+        Calculations.add_division_calculation(tuple_values)
+        return True
