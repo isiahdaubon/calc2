@@ -1,6 +1,6 @@
 """Testing Divide"""
-from calc.calculations.multiplication import Multiplication
-def test_calculation_multiplication():
+from calc.calculations.division import Division
+def test_calculation_division():
     """test that calc has static method for divide"""
     #arrange
     mynumbers = (1.0,2.0)

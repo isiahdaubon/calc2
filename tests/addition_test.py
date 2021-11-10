@@ -1,6 +1,6 @@
 """Testing Addition"""
 from calc.calculations.addition import Addition
-def test_calculation_addition():
+def test_calculations_addition():
     """test that calc has static method for addition"""
     #arrange
     mynumbers = (1.0,2.0)
