@@ -7,7 +7,7 @@ class Calculations:
         Calculations.history.clear()
         return True
     @staticmethod
-    def count_history
+    def count_history():
         return len(Calculations.history)
     @staticmethod
     def get_last_calculation():
