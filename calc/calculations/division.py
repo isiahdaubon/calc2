@@ -1,5 +1,6 @@
 """Division Class"""
 from calc.calculations.calculation import Calculation
+import pytest
 
 
 class Division(Calculation):
@@ -10,3 +11,5 @@ class Division(Calculation):
         for value in self.values:
             result = result / value
         return result
+
+

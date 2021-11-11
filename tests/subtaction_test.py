@@ -1,5 +1,6 @@
 """Testing Subtraction"""
 from calc.calculations.subtraction import Subtraction
+
 def test_calculation_subtraction():
     """test that calc has static method for subtraction"""
     #arrange

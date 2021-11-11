@@ -7,4 +7,14 @@ def test_calculation_division():
     divide = division(mynumbers)
     #act
     #assert
-    assert divide.get_result() == 2.0
+    assert divide.get_result() == 0.50
+
+    def test_calculator_division_error():
+        """ tests dividing by 0 exception """
+        # Arrange
+        mynumbers = (1.0, 0.0, 1.0)
+        divide = Division(mynumbers)
+        # Act
+        # Assert
+        with pytest.raises(ZeroDivisionError):
+            return result is True
