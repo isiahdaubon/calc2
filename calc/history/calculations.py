@@ -1,4 +1,4 @@
-"""Calculation History Class"""
+"""Calculation history Class"""
 class Calculations:
     history = []
     #pylint: disable=too-few-public-methods

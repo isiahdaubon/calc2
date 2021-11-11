@@ -1,5 +1,5 @@
 """ This is the increment function"""
-from calc.History.calculations import Calculations
+from calc.history.calculations import Calculations
 from calc.calculations.subtraction import Subtraction
 from calc.calculations.division import Division
 from calc.calculations.addition import Addition
