@@ -20,8 +20,9 @@ class Calculations:
         """get specific calculation from history"""
         return Calculations.history[num]
     @staticmethod
-    """ get a specific calculation from history"""
-    return Calculations.history.append(calculation)
+    def add_calculation(calculation):
+        """get specific calculation from history"""
+        return Calculations.history.append(calculation)
 
 
 
